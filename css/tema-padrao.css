@@ -1,0 +1,38 @@
+:root{
+    --corBranco: #ffffff;
+    --corAzul:#2A7AE4;
+    --corCinza:#EAF2FD;
+    --corBackgroundPesquisa : #F5F5F5;
+    --corCinzaEscuro: #464646;
+    --corCinzaClaro:#E5E5E5;
+
+    --fontePadrao:'Raleway',sans-serif;
+}
+
+.container{
+    max-width:1136px;
+    margin:0 auto;
+    
+}
+
+
+.pularNavegacao,
+.pularNavegacao:hover,
+.pularNavegacao:active,
+.pularNavegacao:focus {
+    color: transparent;
+    overflow: hidden;
+    position: absolute;
+    text-indent: 100%;
+    white-space: nowrap;
+
+}
+
+
+@media screen and (max-width:768px){
+
+    .container{
+        max-width: 768px;
+    }
+}
+ 

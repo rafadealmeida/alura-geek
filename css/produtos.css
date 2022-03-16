@@ -1,0 +1,102 @@
+.produtosSection{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+    
+}
+
+.verTudo,.verProduto{
+    color: var(--corAzul);
+    font-weight: bold;
+    font-family: 'Raleway';
+    text-decoration: none;
+
+}
+
+
+.tituloSessao{
+    color: var(--corCinzaEscuro);
+    font:bold 36px 'Raleway',sans-serif ;
+}
+
+
+
+.cabecalhoProduto{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0 1rem 0;
+}
+
+.gradeProdutos{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
+.poduto{
+    box-sizing: border-box;
+    display: flex;
+    width: 15%;
+}
+
+.nomeProduto{
+    color: var(--corCinzaEscuro);
+    font:normal 14px 'Raleway',sans-serif;
+    padding: .3rem 0;
+}
+
+.precoProduto{
+    color: var(--corCinzaEscuro);
+    font: bold 16px 'Raleway',sans-serif;
+}
+
+
+@media screen and (max-width:768px) {
+   
+    .gradeProduto{
+        justify-content: space-around;
+    }
+    .produtosSection{
+        width: 90%;
+       
+        margin: 0 auto;
+    }
+    
+    .produto:last-child, .produto:nth-child(5){
+        display: none;
+    }
+    .produto>img{
+        width:90%
+    }
+    
+    
+   
+}
+
+
+
+@media screen and (max-width:480px) {
+   
+    .gradeProdutos{
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+    .produtosSection{
+        width: 90%;
+       
+        margin: 0 auto;
+    }
+    
+    .produto:last-child, .produto:nth-child(5){
+        display: none;
+    }
+    .produto{
+        width:50%;
+        margin-bottom:1rem;
+    }
+    
+    
+   
+}

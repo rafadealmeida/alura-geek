@@ -1,0 +1,207 @@
+footer{
+    background-color: var(--corCinza);
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-around;
+    margin:0 auto ;
+    padding: 2rem 0 ;
+}
+
+.rodape>img{
+    width:20%;
+    height:20%;
+    margin-left: -8%;
+    
+}
+
+.linksRodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.contatoLink{
+    text-decoration: none;
+}
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: -3%;
+    
+}
+
+#contatoNome{
+    border: 0px;
+    border-radius: 4px;
+    box-sizing: content-box;
+    margin-bottom: 1rem;
+    padding: 1.8rem 0 .3rem .6rem;
+    position:relative;
+    width: 100%;
+    
+}
+
+#contatoMensagem{
+    width: 102%;
+    border: 0px;
+    border-radius: 4px;
+    padding: 0rem .3rem .3rem .6rem;
+    font-family: 'Raleway', sans-serif;
+    color:var(--corCinzaEscuro);
+    line-height: 20px;
+}
+
+#botaoEnviar{
+    background-color:var(--corAzul);
+    border-radius: 0px;
+    color: var(--corBranco);
+    
+    font-family: 'Raleway',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    
+    line-height: 19px;
+    letter-spacing: 0em;
+    margin-top: 1rem;
+    padding: 1rem 0;
+    text-align: center;
+    width: 35%;
+
+}
+
+.nomeContatoBox{
+    position: absolute;
+}
+
+.labelNome{
+    position: relative;
+    z-index: 2;
+    top:25%;
+    padding:.6rem;
+    color:var(--corCinzaEscuro);
+    font-size:12px;
+    font-family: 'Raleway',sans-serif;
+    
+}
+
+.responsividadeRodape{
+    display: none;
+    
+}
+
+.paragrafoRodape{
+    align-items: center;
+    text-align: center;
+    margin-bottom: .6rem;
+}
+
+
+@media screen and (max-width:768px){
+    #contatoMensagem{
+        width: 50%;
+        
+    }
+    #contatoNome{
+        width: 70%;
+        margin-left: -11%;
+        
+    }
+    .labelNome{
+        top: -30%;
+    }
+    .rodape>img{
+        display: none;
+    }
+
+    .rodape{
+        justify-content: space-between;
+    }
+    .linksRodape{
+        display: none;
+    }
+    .responsividadeRodape{
+        display: flex;
+        flex-direction: column;
+        margin: 0 10% 0 5%;
+        
+    }
+
+    .contato{
+        margin-right: -15%;
+        width: 100%;
+    }
+
+    .linksRodapeResponsividade{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #contatoMensagem{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:480px){
+    #contatoMensagem{
+        width: 84%;
+        
+    }
+    #contatoNome{
+        width: 80%;
+        margin-left: -18%;
+        
+    }
+    .contatoLink{
+        margin: 0.5rem 0;
+    }
+    .labelNome{
+        top: -40%;
+    }
+    .rodape>img{
+        display: none;
+    }
+
+    .rodape{
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 0 5%;
+    }
+    .linksRodape{
+        display: none;
+    }
+    .responsividadeRodape{
+        display: flex;
+        flex-direction: column;
+        margin: 5% 0;
+        
+    }
+
+    .contato{
+        margin-left:0%;
+        margin-top: 5%;
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    .linksRodapeResponsividade{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    #botaoEnviar{
+        padding: .5rem 5rem;
+        text-align: center;
+        align-items: center;
+    }
+}

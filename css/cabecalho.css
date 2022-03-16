@@ -1,0 +1,109 @@
+
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2% 0;
+}
+
+.barraDePesquisa{
+    padding:.5rem .6rem;
+    /* border-radius: 20px; */
+    /* background-color:var(--corBackgroundPesquisa); */
+    border: 0;
+    background-color: transparent;
+    /* margin-right: 80%; */
+    width:80%;
+    /* background-image: url(../img/lupa.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right; */
+    box-sizing:border-box;
+    float: left;
+    
+}
+.campoBusca > button {
+    width:20%;
+    float: left;
+    height: 100%;
+    background-color: transparent;
+    border: 0px;
+    margin-top:2%;
+    cursor: pointer;
+}
+
+.svgLupa>path{
+    fill: rgb(133, 133, 133);
+}
+
+
+.svgLupa>path:hover{
+    fill: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+
+.campoBusca{
+    float:left;
+    border: 1px solid black;
+    border-radius:20px;
+    background-color:var(--corBackgroundPesquisa);
+    width: 40%;
+}
+
+
+
+.botaoLogin{
+    background-color:var(--corBranco);
+    
+    border: 1px solid var(--corAzul);
+    color: var(--corAzul);
+    
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    
+    line-height: 19px;
+    letter-spacing: 0em;
+    padding: 1rem 4rem;
+    text-align: left;
+    text-decoration: none;
+
+
+}
+
+@media screen and (max-width:768px){
+    .barraDePesquisa{
+        margin-right: 10%;
+
+    }
+    .campoBusca > button{
+        width:10%
+    }
+
+
+}
+
+@media screen and (max-width:480px){
+    .cabecalho img{
+        transform: scale(.6)
+    }
+    .botaoLogin{
+        transform: scale(.7)
+    }
+
+    .barraDePesquisa{
+        display: none;
+    }
+
+    .cabecalho{
+        background-image: url(../img/lupa.png);
+        background-repeat: no-repeat;
+        background-position:right
+    }
+}
+
