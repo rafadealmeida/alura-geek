@@ -1,4 +1,10 @@
-.loginUsuario{
+main{
+    background-color: var(--corCinzaClaro);
+    padding-bottom: 2%;
+    
+}
+
+.usuariologin{
     display:flex;
     flex-direction: column;
     width: 25%;
@@ -8,25 +14,7 @@
     background-color: var(--corCinzaClaro);
 }
 
-.tituloLogin{
-    margin-bottom: 2rem;
-    text-align: center;
-
-    font-family: 'Raleway',sans-serif;
-    font-size: 18px;
-    font-weight:bold;
-    color:var(--corCinzaEscuro);
-}
-
-.loginUsuario input{
-    margin: 1rem 0;
-
-    padding:1rem;
-    border: 0px;
-    border-radius: 4px;
-}
-
-.botaoEntrar{
+.usuariologin__botaoentrar{
     background-color: var(--corAzul);
     padding: 2rem;
     color: var(--corBranco);
@@ -36,22 +24,36 @@
     width: 100%;
 }
 
-.linkBotaoEntrar{
+.usuariologin__entrar--link{
     text-decoration: none;
     color: var(--corBranco);
     font-family: 'Raleway',sans-serif;
     font-size: 18px;
     font-weight: bold;
 }
+.usuariologin__titulo{
+    margin-bottom: 2rem;
+    text-align: center;
 
-main{
-    background-color: var(--corCinzaClaro);
-    padding-bottom: 2%;
-    
+    font-family: 'Raleway',sans-serif;
+    font-size: 18px;
+    font-weight:bold;
+    color:var(--corCinzaEscuro);
 }
 
+.usuariologin input{
+    margin: 1rem 0;
+
+    padding:1rem;
+    border: 0px;
+    border-radius: 4px;
+}
+
+
+
+
 @media screen and (max-width: 768px){
-    .loginUsuario{
+    .usuariologin{
         width:50%;
     }
 }

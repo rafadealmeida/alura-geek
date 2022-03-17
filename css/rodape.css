@@ -1,31 +1,3 @@
-footer{
-    background-color: var(--corCinza);
-}
-
-.rodape{
-    display: flex;
-    justify-content: space-around;
-    margin:0 auto ;
-    padding: 2rem 0 ;
-}
-
-.rodape>img{
-    width:20%;
-    height:20%;
-    margin-left: -8%;
-    
-}
-
-.linksRodape{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    
-}
-
-.contatoLink{
-    text-decoration: none;
-}
 
 .contato{
     display: flex;
@@ -34,29 +6,7 @@ footer{
     margin-right: -3%;
     
 }
-
-#contatoNome{
-    border: 0px;
-    border-radius: 4px;
-    box-sizing: content-box;
-    margin-bottom: 1rem;
-    padding: 1.8rem 0 .3rem .6rem;
-    position:relative;
-    width: 100%;
-    
-}
-
-#contatoMensagem{
-    width: 102%;
-    border: 0px;
-    border-radius: 4px;
-    padding: 0rem .3rem .3rem .6rem;
-    font-family: 'Raleway', sans-serif;
-    color:var(--corCinzaEscuro);
-    line-height: 20px;
-}
-
-#botaoEnviar{
+#contato__botaoenviar{
     background-color:var(--corAzul);
     border-radius: 0px;
     color: var(--corBranco);
@@ -75,10 +25,46 @@ footer{
 
 }
 
-.nomeContatoBox{
+.contato__link{
+    text-decoration: none;
+}
+
+#contato__mensagem{
+    width: 102%;
+    border: 0px;
+    border-radius: 4px;
+    padding: 0rem .3rem .3rem .6rem;
+    font-family: 'Raleway', sans-serif;
+    color:var(--corCinzaEscuro);
+    line-height: 20px;
+}
+
+#contato__nome{
+    border: 0px;
+    border-radius: 4px;
+    box-sizing: content-box;
+    margin-bottom: 1rem;
+    padding: 1.8rem 0 .3rem .6rem;
+    position:relative;
+    width: 100%;
+    
+}
+
+
+.contato__nome{
     position: absolute;
 }
 
+
+footer{
+    background-color: var(--corCinza);
+}
+
+.paragraforodape{
+    align-items: center;
+    text-align: center;
+    margin-bottom: .6rem;
+}
 .labelNome{
     position: relative;
     z-index: 2;
@@ -89,25 +75,38 @@ footer{
     font-family: 'Raleway',sans-serif;
     
 }
+.rodape{
+    display: flex;
+    justify-content: space-around;
+    margin:0 auto ;
+    padding: 2rem 0 ;
+}
 
-.responsividadeRodape{
+.rodape>img{
+    width:20%;
+    height:20%;
+    margin-left: -8%;
+    
+}
+
+.rodape__contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.rodape__contato--responsive{
     display: none;
     
 }
 
-.paragrafoRodape{
-    align-items: center;
-    text-align: center;
-    margin-bottom: .6rem;
-}
-
 
 @media screen and (max-width:768px){
-    #contatoMensagem{
+    #contato__mensagem{
         width: 50%;
         
     }
-    #contatoNome{
+    #contato__nome{
         width: 70%;
         margin-left: -11%;
         
@@ -122,10 +121,10 @@ footer{
     .rodape{
         justify-content: space-between;
     }
-    .linksRodape{
+    .rodape__contato{
         display: none;
     }
-    .responsividadeRodape{
+    .rodape__contato--responsive{
         display: flex;
         flex-direction: column;
         margin: 0 10% 0 5%;
@@ -137,28 +136,28 @@ footer{
         width: 100%;
     }
 
-    .linksRodapeResponsividade{
+    .contato__link--responsive{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
 
-    #contatoMensagem{
+    #contato__mensagem{
         width: 70%;
     }
 }
 
 @media screen and (max-width:480px){
-    #contatoMensagem{
+    #contato__mensagem{
         width: 84%;
         
     }
-    #contatoNome{
+    #contato__nome{
         width: 80%;
         margin-left: -18%;
         
     }
-    .contatoLink{
+    .contato__link{
         margin: 0.5rem 0;
     }
     .labelNome{
@@ -175,10 +174,10 @@ footer{
         justify-content: space-around;
         margin: 0 0 5%;
     }
-    .linksRodape{
+    .rodape__contato{
         display: none;
     }
-    .responsividadeRodape{
+    .rodape__contato--responsive{
         display: flex;
         flex-direction: column;
         margin: 5% 0;
@@ -192,16 +191,18 @@ footer{
         justify-content: space-between;
     }
 
-    .linksRodapeResponsividade{
+    .contato__link--responsive{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         text-align: center;
     }
 
-    #botaoEnviar{
+    #contato__botaoenviar{
         padding: .5rem 5rem;
         text-align: center;
-        align-items: center;
+        width: 85%;
+        
+        
     }
 }

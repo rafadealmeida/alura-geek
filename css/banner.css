@@ -1,9 +1,13 @@
+
 .banner{
-    width: 100%;
-    margin: 0 auto;
+    background-image: url(../img/Hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 12%;
 }
 
-.linkConsoles{
+.banner__linkconsoles{
+
     background-color: var(--corAzul);
     color: var(--corBranco);
     
@@ -11,22 +15,20 @@
     font-style: normal;
     font-size: 16px;
     font-weight: 400;
+    float:inline-start; 
     
-    left: 10.6%;
+    
     line-height: 19px;
-    padding: 1.2rem 2.4rem;
+    padding: 1.2rem 1rem;
     
-    position: absolute;
+    
     text-decoration: none;
-    top: 45.5%;
+
+    margin-top: 10%;
+    
+    
 }
 
-.sectionBanner{
-    background-image: url(../img/Hero.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 12%;
-}
 
 /* .bannerTitulo{
     color:var(--corBranco);
@@ -47,43 +49,54 @@
 } */
 
 @media screen and (max-width:768px){
-    .sectionBanner{
+    .banner{
         background-image: url(../img/banner-tamanho-m.png);
+        
         padding:25%
     }
 
 
-    .linkConsoles{
-        top: 37.5%;
-        transform: scale(0.8);
-        left: 2%;
+    .banner__linkconsoles{
+        
+        margin-top: 28%;
+        margin-left: -41%;
+
+        transform: scale(1,0.8);
+        
     }
 }
 
 @media screen and (max-width:480px){
-    .sectionBanner{
+    .banner{
         background-image: url(../img/banner-tamanho-p.png);
-        padding:25%
+        
     }
 
 
-    .linkConsoles{
-        top: 25%;
+    .banner__linkconsoles{
+        margin-top: 20%;
+        margin-left: -46%;
+
         transform: scale(0.8);
-        left: 0%;
     }
 }
 
-@media screen and (min-width:108px){
-    .linkConsoles{
-        top: 56.5%;
-        left: 9.6%;
+@media screen and (min-width:1081px){
+    .banner{
+        
+        
+        padding:14%
+    }
+    .banner__linkconsoles{
+    transform: scale(1.5);
+    margin-top:12%
+    
     }
 }
-@media screen and (min-width:1440px){
-    .linkConsoles{
-        top: 49.5%;
-        left: 12.3%;
-        transform: scale(1.8,1.8);
+/* @media screen and (max-width:1440px){
+    .banner__linkconsoles{
+        margin-top: 10.1%;
+        margin-left: 1.4%;
+        transform: scale(2.5,2.2);
     }
-}
+} */
